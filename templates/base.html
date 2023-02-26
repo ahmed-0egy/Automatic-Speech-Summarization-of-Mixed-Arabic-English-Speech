@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Photon AI - Dekstop 1440</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A500" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C700" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C700%2C800" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700%2C800" />
+  <link rel="stylesheet" href="./styles/photon-ai-dekstop-1440.css" />
+  <link href="{{ url_for('static',filename='styles/photon-ai-dekstop-1440.css') }}" rel="stylesheet">
+</head>
+
+<body>
+  <div class="photon-ai-dekstop-1440-G5Q">
+    <div class="auto-group-q9rt-gQ2">
+
+      <div class="hero-Zqt">
+        <img class="background-hBQ" src="{{url_for('static', filename='assets/background.png')}}" />
+        <p class="turn-your-home-into-dar">This makes it easier for you to summarize any audio into short, readable
+          chunks so you can stop feeling overloaded with information.</p>
+        <p class="imagine-your-home-sm-WuY">
+          Go to the main ideas in your audios, summarize them
+          <br />
+          in 1 Click
+        </p>
+        <div class="rectangle-9-auQ">
+        </div>
+        <a href="#summarization">
+          <div class="button-primary-filled-active-55U">
+            <p class="label-LXC">SUMMARIZE NOW - IT&#39;S FREE</p>
+          </div>
+        </a>
+        <div class="topnav-Eca">
+          <p class="photon-ai-Zuk">Photon-AI</p>
+          <div class="auto-group-fyei-uyc">
+            <div class="auto-group-hh2j-Sie">
+              <div class="menu-mW2">
+                <p class="home-Fvz">Home</p>
+                <p class="contact-nvv">Contact</p>
+              </div>
+              <p class="faq-7yC">FAQ</p>
+              <p class="services-Ryt">Services</p>
+            </div>
+            <p class="sign-in-MMk">Sign In</p>
+            <img class="line-rpJ" src="{{url_for('static', filename='assets/line.png')}}" />
+            <p class="get-started-zfc">Get Started</p>
+          </div>
+        </div>
+        <img class="frame-Kxn" src="{{url_for('static', filename='assets/frame-mq4.png')}}" />
+        <img class="frame-3Nz" src="{{url_for('static', filename='assets/frame-STc.png')}}" />
+      </div>
+
+      <div class="features-9S2">
+        <div class="dot-2ki">          
+        </div>
+        
+        <!-- Upload File -->
+        {% block upload_file %}{% endblock %}
+        <br><br>
+        
+        <!-- Transcription part -->
+        {% block transcription %}{% endblock %}
+        <br><br>
+
+        <!-- Summarization part -->
+        {% block Summarization %}{% endblock %}
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Footer -->
+    <div class="auto-group-tibc-9B8">
+      <div class="update-eta">
+        <div class="auto-group-1zev-mCW">
+          <p class="update-hbx">UPDATE</p>
+          <p class="it-starts-with-an-up-QmG">Focus on the Value, Not the Noise.</p>
+        </div>
+        <div class="auto-group-7axa-wFQ">
+          <div class="background-sPx">
+            <img class="dot-Pt6" src="{{url_for('static', filename='assets/dot-tMx.png')}}" />
+            <img class="dot-Vw8" src="{{url_for('static', filename='assets/dot.png')}}" />
+            <img class="dot-RZt" src="{{url_for('static', filename='assets/dot-CcJ.png')}}" />
+            <img class="blue-kMG" src="{{url_for('static', filename='assets/blue.png')}}" />
+          </div>
+          <p class="it-starts-with-an-up-Hc6">Speech Recognition - Type with your Voice</p>
+          <p class="it-starts-with-an-up-12J">100% Automatic Article Summarization with a click</p>
+          <img class="frame-6pS" src="{{url_for('static', filename='assets/frame-DRt.png')}}" />
+          <p
+            class="photon-is-a-free-arabic-english-code-switched-speech-to-text-application-aimed-at-assisting-you-with-transcription-and-summarization-of-any-type-of-audio-file-qn2">
+            Photon is a free Arabic- English code switched speech-to-text application aimed at assisting you with
+            transcription and summarization of any type of audio file.</p>
+          <p
+            class="photon-thiss-clever-ai-analyzes-any-piece-of-text-and-summarizes-it-automatically-in-a-way-that-makes-it-easy-for-you-to-read-understand-and-act-on-GcS">
+            Photon, a clever AI that analyzes any piece of text and summarizes it automatically, in a way that makes it
+            easy for you to read, understand and act on.</p>
+          <img class="frame-FMt" src="{{url_for('static', filename='assets/frame.png')}}" />
+        </div>
+        <div class="auto-group-6aft-mb8">
+          <img class="frame-67c" src="{{url_for('static', filename='assets/frame-Yta.png')}}" />
+          <div class="auto-group-utlz-q5C">
+            <p class="it-starts-with-an-up-MZL">Avoid the Clickbait Trap</p>
+            <p
+              class="photon-selects-the-most-relevant-points-from-a-text-so-you-can-get-the-gist-of-what-is-said-quickly-without-having-to-go-through-all-the-paragraphs-6G2">
+              Photon selects the most relevant points from a text so you can get the gist of what is said quickly,
+              without having to go through all the paragraphs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-ahY">
+        <div class="auto-group-4bdc-6vn">
+          <div class="left-pbt">
+            <div class="box-a5G">
+            </div>
+            <p class="siphome-llc-the-new-udL">
+              <span class="siphome-llc-the-new-udL-sub-0">
+                UOttawa
+                <br />
+                Photon Computing
+              </span>
+
+            </p>
+          </div>
+          <p class="photon-ai-qQW">Photon-AI</p>
+          <img class="frame-wTY" src="{{url_for('static', filename='assets/frame-vjU.png')}}" />
+        </div>
+        <div class="right-53x">
+          <div class="box-RNi">
+          </div>
+          <div class="about-y9L">
+            <p class="about-sVc">About</p>
+            <p class="contact-us-privacy--ci6">
+              Contact Us
+              <br />
+              Privacy &amp; Policy
+              <br />
+              Terms &amp; Conditions
+              <br />
+              FAQ
+            </p>
+          </div>
+          <div class="sosmed-X4N">
+            <p class="stay-connected-nkz">Stay Connected</p>
+            <div class="auto-group-ckte-iPk">
+              <div class="auto-group-btzs-F8n">
+                <img class="ico-facebook-Jsk" src="{{url_for('static', filename='assets/ico-facebook.png')}}" />
+                <img class="ico-twitter-EmQ" src="{{url_for('static', filename='assets/ico-twitter.png')}}" />
+                <img class="ico-instagram-Zog" src="{{url_for('static', filename='assets/ico-instagram.png')}}" />
+              </div>
+              <p class="facebook-twtiter-ins-uMk">
+                Facebook
+                <br />
+                Twtiter
+                <br />
+                Instagram
+              </p>
+            </div>
+          </div>
+          <img class="image-3-oCE" src="{{url_for('static', filename='assets/image-3.png')}}" />
+          <img class="image-2-tUa" src="{{url_for('static', filename='assets/image-2.png')}}" />
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+
+<script src="{{url_for('static', filename='js/script.js')}}"></script>

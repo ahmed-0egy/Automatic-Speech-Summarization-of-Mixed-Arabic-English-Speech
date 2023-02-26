@@ -1,0 +1,1 @@
+This directory is where audio files are uploaded to be transcribed then summarized.

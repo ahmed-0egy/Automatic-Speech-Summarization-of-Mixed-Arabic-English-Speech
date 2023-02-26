@@ -1,0 +1,56 @@
+{%extends "base.html"%}
+
+{% block upload_file %}
+  <div>
+    <div class="auto-group-t7fy-NnN">
+      <input type="file" name="file" id="real-file" hidden="hidden" />
+
+      <p class="bring-more-systems-i-YAn">Automatic Summarization for Mixed Language</p>
+      <div class="rectangle-12-b94"></div>
+      <img class="d7e3351bfa8a08228ebbc388023f41c-1-Ajt" src="{{url_for('static', filename='assets/upload.png')}}" />
+      <span id="custom-text" class="drag-and-drop-your-audio-files-here-wav-mp3-JJN"> 
+        Upload your audio files here <br/>.wav, .mp3
+      </span>
+      <button class="rectangle-14-Bd4" type="button" id="custom-button">Upload</button>            
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block transcription %}
+  <div class="auto-group-onfc-7UE">
+    <button class="auto-group-dgnw-ts" onclick="transcribe()" style="width: auto; padding-inline: 20px;"> Get Transcription </button>
+  </div>
+
+  <div class="auto-group-hbva-dopp">
+    <p class="text-summarization-9XGG"> Transcription </p>
+    <p style="font-size: 1.7rem; font-family: Inter, 'Source Sans Pro';" id="transcript"></p>
+  </div>
+{% endblock %}
+
+
+{% block Summarization %}
+  <div class="auto-group-onfc-7UE">
+    <button class="auto-group-dgnw-ts" onclick="get_short_english_summarization()" style="width: auto; padding-inline: 20px;"> Get English Title</button>
+    <button class="auto-group-dgnw-ts" onclick="get_short_arabic_summarization()" style="width: auto;  padding-inline: 20px;"> Get Arabic Title </button>
+  </div>
+
+  <div class="auto-group-hbva-dopp">
+    <p class="text-summarization-9XGG"> Audio Title </p>
+    <p style="font-size: 1.7rem; font-family: Inter, 'Source Sans Pro';" id="title"></p>
+    <!--<p class="you-can-edit-the-summarization-here-Tnr" id="textsumm">You can edit the summarization here</p>-->
+  </div>
+
+  <br><br>
+
+  <div class="auto-group-onfc-7UE">
+    <button class="auto-group-dgnw-ts" onclick="get_long_english_summarization()" style="width: auto; padding-inline: 20px;"> Get English Summarization </button>
+    <button class="auto-group-dgnw-ts" onclick="get_long_arabic_summarization()" style="width: auto; padding-inline: 20px;"> Get Arabic Summarization </button>
+  </div>
+
+  <div class="auto-group-hbva-dop">
+    <p class="text-summarization-9XG"> Audio Summarization </p>
+    <p style="font-size: 1.7rem; font-family: Inter, 'Source Sans Pro';" id="summarization"></p>
+    <!--<p class="you-can-edit-the-summarization-here-Tnr" id="textsumm">You can edit the summarization here</p>-->
+  </div>
+{% endblock %}

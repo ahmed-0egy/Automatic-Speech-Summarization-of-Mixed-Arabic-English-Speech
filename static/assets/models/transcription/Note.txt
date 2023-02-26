@@ -1,0 +1,1 @@
+This directory is for transcription model, if the model is not existed here, you don't need to worry since the model.pt file will be downloaded automatically to this directory
